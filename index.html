@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cyclohelp</title>
+    <link rel="stylesheet" href = "style.css">
+    
+</head>
+
+<body>
+
+
+    <section class = "header">
+        <div>
+            <nav>
+            
+                <div class="nav-links">
+                    <ul>
+                        <li><a href="">HOME</a></li>   
+                    </ul>
+                    
+                </div>
+                <div class="emergency">
+                    <ul>
+                        <li><a href="">EMERGENCY</a></li>
+                         </ul>
+                    </div>
+                    <div class="About">
+                           <ul>
+                            <li><a href="">ABOUT US</a></li>
+                             </ul>
+                        </div>  
+            </nav>
+        </div>
+
+        <div class="page1">
+            <div class="Block1">
+
+                <div class="predictbox">
+                    <div class="container">
+                        <input type="file" class="upload_hide" id="upload_costum">
+                        <label for="upload_costum" class="upload_label">
+                            <div class="image">
+                                <img src ="" alt="">
+                            </div>
+                            <i class="fas fa-cloud-upload-alt"></i>
+                            <p class="drag_text">Drag & Drop to Upload file</p>
+                            <button class="choose_file">choose a file </button> 
+                           
+                        </label>
+                        
+                    </div>
+                    <script src="https://code.jquery.com/jquery-3.6.4.js" integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
+    <script>
+       
+        $('#upload_costum').change(function(event){
+            let tmppath =URL.createObjectURL(event.target.files[0])
+            $('.image > img').fadeIn('fast').attr('src',tmppath)
+           
+        })
+    </script>
+                </div>
+
+            </div>
+            <div class="button">
+                <button class="buttondiv">
+                    Predict Intensity
+                </button>
+            </div>
+
+        <div class="Block2">
+            <div class="div1">
+                <p>
+                    Cyclone  Intensity  Estimation 
+                   </p>
+            </div>
+            <div class="div2">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium amet fugiat assumenda, nihil dolore aliquid nam expedita? Quae accusamus voluptate, exercitationem aspernatur sunt quisquam expedita officiis cumque facilis dolores autem. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur a autem recusandae ipsum! Neque ipsum eveniet facere, culpa impedit, voluptatem reiciendis tempora amet voluptas vel et. Voluptate dolorem ab saepe ea repellat eos quibusdam consectetur odio ut, quae, deleniti dolore. </p>
+            </div>
+        </div>
+    </div>
+
+    
+        
+   
+   
+    
+
+    </section>
+    
+</body>
+</html>
